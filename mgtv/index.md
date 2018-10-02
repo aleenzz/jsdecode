@@ -6,23 +6,23 @@
 # 过程
 抓包确认post get传输密码是否加密
 
-[attachimg]70076[/attachimg]
+![](https://github.com/aleenzz/jsdecode/blob/master/mgtv/1.png)
 
 这里我们看到密码被加密 ，然后这里可以搜索pwd 也可以搜索account 因为我搜过pwd 不好找 就直接搜 account了
 
-[attachimg]70077[/attachimg]
+![](https://github.com/aleenzz/jsdecode/blob/master/mgtv/2.png)
 
 在代码框里面找找，我翻到下面明显的一个pwd加密然后下断点
 
-[attachimg]70078[/attachimg]
+![](https://github.com/aleenzz/jsdecode/blob/master/mgtv/3.png)
 
 ~~说句废话 那个工具最上面是断点暂停了，旁边那个是执行这个到返回 下面那个f11类似od的f8单步跟踪还有个是返回~~
 
-[attachimg]70079[/attachimg]
+![](https://github.com/aleenzz/jsdecode/blob/master/mgtv/4.png)
 
 进来我们发现作者很好 直接给我们 下了注释 就是这一段 都不用跟踪看看了
 
-[attachimg]70080[/attachimg]
+![](https://github.com/aleenzz/jsdecode/blob/master/mgtv/5.png)
 
 然后使用一个调试工具 网上一堆，都一样，然后加载执行编辑说`honey`没定义，我这里直接吧
 ```
@@ -32,7 +32,7 @@ t.encodePassword 换成 encodePassword
 
 加载执行
 
-[attachimg]70081[/attachimg]
+![](https://github.com/aleenzz/jsdecode/blob/master/mgtv/6.png)
 
 然后抓包替换我们生成的hash看看能不能行，一次js解密结束
 
