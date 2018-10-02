@@ -358,4 +358,3 @@ t.encodePassword 换成 encodePassword
     }
 ```
 然后没必要吧js改写成python什么的 直接用`execjs`模块加载就行了  
-TCV=0.5
